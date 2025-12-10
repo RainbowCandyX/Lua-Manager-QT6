@@ -334,7 +334,7 @@ Widget::Widget(QWidget *parent)
 
     ui->treeWidget->header()->setSectionResizeMode(QHeaderView::ResizeToContents);
 
-    QString luaFolder = QDir::currentPath() + "/lua/";
+    QString luaFolder = qApp->applicationDirPath() + "/lua/";
     auto Refresh_Lua_List = [=]()
     {
         ui->treeWidget->clear();
