@@ -8,11 +8,7 @@
 #include <string>
 #include <sol/sol.hpp>
 
-#if defined(_M_AMD64)
 #pragma comment(lib, "lua51.lib")
-#elif defined(_M_ARM64)
-#pragma comment(lib, "lua51_ARM64.lib")
-#endif
 
 class LuaEnvManager
 {

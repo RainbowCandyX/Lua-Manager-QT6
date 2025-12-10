@@ -6752,7 +6752,11 @@ namespace sol {
 			static_assert(std::is_constructible<T, Args&&...>::value, "T must be constructible with Args");
 
 			*this = nullopt;
+#ifdef _MSC_VER
+			this->construct(std::forward<Args>(args)...);
+#else
 			m_value = std::addressof(std::forward<Args>(args)...);
+#endif
 			return *m_value;
 		}
 
