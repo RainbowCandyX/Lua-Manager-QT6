@@ -34,7 +34,10 @@ LuaJIT-*/src/*.so
 LuaJIT-*/src/*.dylib
 LuaJIT-*/src/luajit
 LuaJIT-*/src/libluajit.*
-LuaJIT-*/src/host/
+LuaJIT-*/src/host/*.o
+LuaJIT-*/src/host/buildvm
+LuaJIT-*/src/host/buildvm_arch.h
+LuaJIT-*/src/host/minilua
 
 # Backup files
 *.backup
