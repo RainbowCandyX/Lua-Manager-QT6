@@ -1,0 +1,52 @@
+# CMake build directories
+cmake-build-*/
+build/
+Build/
+out/
+
+# Qt Creator files
+*.pro.user
+*.pro.user.*
+CMakeLists.txt.user
+*.autosave
+
+# CLion / IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Compiled files
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# LuaJIT build artifacts (keep source, exclude built binaries)
+LuaJIT-*/src/*.o
+LuaJIT-*/src/*.a
+LuaJIT-*/src/*.so
+LuaJIT-*/src/*.dylib
+LuaJIT-*/src/luajit
+LuaJIT-*/src/libluajit.*
+LuaJIT-*/src/host/
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
